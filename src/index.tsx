@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+<<<<<<< HEAD
 import Navigation from './components/nav';
 
 import registerServiceWorker from './registerServiceWorker';
@@ -17,6 +18,62 @@ class Homepage extends React.Component<any, any> {
 }
 ReactDOM.render(
   <Homepage />,
+=======
+import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
+import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { initializeIcons } from '@uifabric/icons';
+ //import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+import './index.css';
+
+import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
+
+loadTheme({
+    palette: {
+      'themePrimary': '#ed1a3b',
+      'themeLighterAlt': '#fef4f5',
+      'themeLighter': '#fde8eb',
+      'themeLight': '#fbd1d8',
+      'themeTertiary': '#f89fac',
+      'themeSecondary': '#ef314d',
+      'themeDarkAlt': '#dc1130',
+      'themeDark': '#ab0d25',
+      'themeDarker': '#860a1d',
+      'neutralLighterAlt': '#e9e9ec',
+      'neutralLighter': '#e5e5e9',
+      'neutralLight': '#dadae0',
+      'neutralQuaternaryAlt': '#cacad2',
+      'neutralQuaternary': '#c0c0ca',
+      'neutralTertiaryAlt': '#b7b7c3',
+      'neutralTertiary': '#d6d6d6',
+      'neutralSecondary': '#474747',
+      'neutralPrimaryAlt': '#2e2e2e',
+      'neutralPrimary': '#333333',
+      'neutralDark': '#242424',
+      'black': '#1c1c1c',
+      'white': '#f1f1f3'
+    }
+});
+
+ // Register icons and pull the fonts from the default SharePoint cdn:
+initializeIcons();
+
+const MyPage = () => (
+  <Fabric>
+    <DefaultButton>
+      I am butjon.
+    </DefaultButton>
+    <DefaultButton
+  text="See Button"
+  primary={true}
+  href="#/components/button"
+/>
+  </Fabric>
+);
+
+ReactDOM.render(
+  <MyPage />,
+>>>>>>> 61369f124c92baa86cb4304ad84c781551c8948d
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
