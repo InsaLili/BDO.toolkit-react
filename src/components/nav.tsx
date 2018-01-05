@@ -11,8 +11,7 @@ export default class NavBasicExample extends React.Component<any, any> {
   public render() {
     return (
       <div className='ms-NavExample-LeftPane'>
-              <Head />
-
+        <Head />
         <Nav
           groups={
             [

@@ -1,32 +1,13 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-<<<<<<< HEAD
 import Navigation from './components/nav';
-
-import registerServiceWorker from './registerServiceWorker';
-import './index.css';
-
-
-class Homepage extends React.Component<any, any> {
-  render(){
-    return(
-      <div>
-        <Navigation />
-      </div>
-    );
-  }
-}
-ReactDOM.render(
-  <Homepage />,
-=======
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+// import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
 import { initializeIcons } from '@uifabric/icons';
  //import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
-
 import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
+
 
 loadTheme({
     palette: {
@@ -55,25 +36,23 @@ loadTheme({
     }
 });
 
+
  // Register icons and pull the fonts from the default SharePoint cdn:
 initializeIcons();
 
-const MyPage = () => (
-  <Fabric>
-    <DefaultButton>
-      I am butjon.
-    </DefaultButton>
-    <DefaultButton
-  text="See Button"
-  primary={true}
-  href="#/components/button"
-/>
-  </Fabric>
-);
+class Homepage extends React.Component<any, any> {
+  render(){
+    return(
+      <div>
+        <Navigation />
+      </div>
+    );
+  }
+}
 
 ReactDOM.render(
-  <MyPage />,
->>>>>>> 61369f124c92baa86cb4304ad84c781551c8948d
+  <Homepage />,
   document.getElementById('root') as HTMLElement
 );
+
 registerServiceWorker();
