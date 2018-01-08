@@ -1,11 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Navigation from './components/nav';
+import Head from './components/head/head';
+import ComponentRouter from './components/components-router';
 // import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
 import { initializeIcons } from '@uifabric/icons';
  //import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import './index.css';
+import "./public/common.css"
 import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
 
 
@@ -44,7 +45,8 @@ class Homepage extends React.Component<any, any> {
   render(){
     return(
       <div>
-        <Navigation />
+        <Head />
+        <ComponentRouter />
       </div>
     );
   }
