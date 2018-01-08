@@ -22,3 +22,4 @@ yarn-error.log*
 
 #automatic css files
 src/**/*.css
+.idea/
