@@ -1,10 +1,12 @@
-// @import 'uifabric/';
-
 :global {
-  html, body {
+  html, body, ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+    div#root{
       height: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
+    }
   }
 }

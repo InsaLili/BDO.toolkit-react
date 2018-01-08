@@ -1,13 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Head from './components/head/head';
 import ComponentRouter from './components/components-router';
 // import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
 import { initializeIcons } from '@uifabric/icons';
  //import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import "./public/common.css"
 import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
+import "./public/common.css"
 
 
 loadTheme({
@@ -44,10 +43,7 @@ initializeIcons();
 class Homepage extends React.Component<any, any> {
   render(){
     return(
-      <div>
-        <Head />
-        <ComponentRouter />
-      </div>
+      <ComponentRouter />
     );
   }
 }
