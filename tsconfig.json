@@ -8,6 +8,7 @@
     "allowJs": true,
     "jsx": "react",
     "moduleResolution": "node",
+    "typeRoots": [ "./node_modules/@types" ],
     "rootDir": "src",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,

@@ -1,5 +1,3 @@
-/// <reference types="node" />
-
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import ComponentRouter from './components/components-router';
