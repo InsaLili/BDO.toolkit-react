@@ -1,3 +1,5 @@
+declare var require: any
+
 import * as React from 'react';
 import './head.css';
 const logo = require('./bdo-logo.png');
