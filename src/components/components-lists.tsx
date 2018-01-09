@@ -1,5 +1,6 @@
 import * as React from 'react'
 import BasicButton from './button/BasicButton'
+import CalanderPicker from './calendar/Calendar'
 
 const ComponentsLists = [
   { path: '/',
@@ -20,12 +21,12 @@ const ComponentsLists = [
   { path: '/activityitem',
       exact: true,
       name: 'Activity Item',
-      main: () => <h2>activityitem</h2>
+      main: () => <h2>activity item</h2>
   },
-  { path: '/calender',
+  { path: '/calendar',
       exact: true,
-      name: 'Calender',
-      main: () => <h2>Calender</h2>
+      name: 'Calendar',
+      main: CalanderPicker
   },
   { path: '/checkbox',
       exact: true,
