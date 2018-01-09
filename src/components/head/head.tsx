@@ -1,6 +1,7 @@
+declare var require: any
+
 import * as React from 'react';
 import './head.css';
-
 const logo = require('./bdo-logo.png');
 
 class Head extends React.Component {
